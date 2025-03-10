@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        /*Basic Styling*/
+        *{
+            box-sizing: border -box;
+            margin:0;
+            padding:0;
+        }
+        body{
+            fornt-family:Arial,sans-serif;
+        }
+        body{
+            font-family:Arial,sans-serif;
+        }
+        /*Navigation*/
+        nav{
+            background:#2c3e50;
+            padding:1rem;
+            Color: green;
+            display:flex;
+            justify-content:space-between;
+            align-items: center
+        }
+        .logo{
+            font-size = 1.5 rem;
+            font-weight: bold;
+            /*Main contact*/
+            . container {
+                padding:20px;
+                display:flex;
+                gap:20px;
+            }
+            /*Map area*/
+            #map{
+                height: 2;
+                height:500px;
+                background: #f0f0f0;
+                webkit-border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                /*Food listings*/
+                listings {
+                    flex: 1;
+                    background: #f8f9fa;
+
+                    padding: 20px
+                    border-radius:10px;
+                }
+                . food border-radius: white;
+                padding:15px;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0.0,0.1);
+            }
+            /*post surplus form*/
+            .post.form{
+                max-width: 500px;
+                margin: 20px; auto ;
+                padding: :20px;
+                border:1px solid # add;
+                border-radius: 8px;
+            }
+            /*Mobile responsiveness*/
+            @media(max-width:768px)}
+        . container {
+            flex-direction: column;
+        }
+        #map{
+            height: 300px;
+        }
+        }
+        
+                 </style>
+    
+    <h1>Welcome to My Local Restaurant </h1>
+    <!--Navigation-->
+    <nav>
+        <div>  Food Connect</div>
+        <div>
+            <button onclick = "Show Post Form()">Post Surplus</button>
+            <button onclick = "Show login ()">Login</button>
+            
+        </div>
+        <!--Main Content-->
+        <div class = "Container" >
+            <p>Map will appear here</p>
+            
+        </div>
+        <!--Food Listing -->
+        <div class = "listings ">
+            <h2>Available Food 
+            </h2>
+            <!--Food listing 1-->
+            <div class = "food-card">
+                <h3>Fried meat(beef)</h3>
+                <p>1.5km away| collect by 7pm</p>
+                <button onclick = "Claim Food ()">Claim Now</button>
+                
+        </div>
+            <!--Food Listing 2-->
+            <div class = "food -card">
+                <h4>Chicken </h4>
+                <p>2km away|collect by 2pm</p>
+                <button onclick = "Claim Food()">Claim Now</button>
+                
+            </div>
+            <!--Food Listing 3-->
+            <div class = "food+ card">
+                <h5>Mutton</h5>
+                <p>3km away | collected by 4pm</p>
+                <button onclick = "Claim Food()">Claim Now</button>
+                
+            </div>
+            <!--Post Surplus Form(Hidden by Default )-->
+            <div class = "post form" id = "post form style"= "display:none;">
+                <h2>post surplus food </h2>
+                <form onsubmit= "handle Submit (event)">
+                    <label>Food Type:</label>
+                    <input type = "text" required>
+                    <label>Quality: </label>
+                    <input type = "submit ">Post Listing</button>
+                    
+                </form>
+            </div>
+                <script>
+                    //Basic interactivity 
+                    function show Post Form(){
+                        document.get Element By Id('post form'). style.display=16'block';
+                    }
+                    function show Login (){
+                        alert ('Login feature coming soon!');
+                    }
+                    function claim food (){
+                        alert ('Claim request sent!We will contact you ');
+                    }
+                    function handle Submit (event ){
+                        event.preventDefault();
+                        document.getElement By Id('postForm').style.display = 'none';
+                            }
+                
+                    </script>
+        </body>
+        </html >
